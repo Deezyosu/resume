@@ -6,28 +6,31 @@
     <meta name="keywords" content="css,  html, course, online, dota2">
     <meta name="viewport" content="This is my user page">
     <title>Page 01</title>
+    <link rel="stylesheet" href="selectors.css">
 </head>
 <body>
 
-<img src="https://avatars.mds.yandex.net/get-kino-vod-films-gallery/69336/b4053a7ecf51c1e28e0082ce0b93d028/380x240" width="150" alt="My Face">
+    <div class="container">
+        <div class="info">
+            <div class="info-text">
+                <img class="avatar" src="image.jpeg" alt="My face">
 
-<h1>My user page</h1>
-<br>
-<h2>Hello new people</h2>
-<hr>
-<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> <em> Totam, consectetur. Quisquam explicabo deleniti dolore, minus facilis ad voluptatibus blanditiis impedit veritatis deserunt! Officiis ducimus quisquam, laborum in maxime excepturi dolores?</em></p>
+                <h2>My user page</h2>
 
-<h3>Links</h3>
+    <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> <em> Totam, consectetur. Quisquam explicabo deleniti dolore, minus facilis ad voluptatibus blanditiis impedit veritatis deserunt! Officiis ducimus quisquam, laborum in maxime excepturi dolores?</em></p>
 
-<a href="https://vk.com/deezypro" target="_blank">VK.com</a>
-|
-<a href="https://www.twitch.tv/deezyowo" target="_blank">twitch</a>
+    <h3>Links</h3>
 
-<hr>
+    <a href="https://vk.com/deezypro" target="_blank">VK.com</a>
+    |
+    <a href="https://www.twitch.tv/deezyowo" target="_blank">twitch</a>
+        </div>
+    </div>
 
+<div class="card bg-red">
 <h2>My Hobbies</h2>
 
-<ol>
+<ol class="list">
     <li>Компьютерные игры</li>
     <ul>
         <li>Dota2</li>
@@ -42,20 +45,20 @@
     <ul>
         <li>BMW</li>
     </ul>
-    
 </ol>
-<hr>
+</div>
 
+<div class="card bg-yellow">
 <h2>Опыт работы</h2>
-
-<table>
-    <Thead>
+ 
+<table class="table">
+    <!-- <Thead>
         <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
         </tr>
-    </Thead>
+    </Thead> -->
     <tr>
         <td>FRESH</td>
         <td>Техник-перегонщик</td>
@@ -77,31 +80,32 @@
         <td>2024 - н.в</td>
     </tr>
 </table>
+</div>
 
-<hr>
+<form class="form">
+    <h2>Связаться со мной</h2>
 
-<h2>Связаться со мной</h2>
-
-<form>
-    <div>
+    <div class="form-row">
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="name" id="name" placeholder="Введите имя">
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email ">
     </div>
-    <h2>Ваше Сообщение</h2>
+</div>
+    <h3>Ваше Сообщение</h3>
 
-    <div>
+    <div class="form-group">
         <label for="message"></label>
         <textarea name="message" id="message" placeholder="Введите сообщение..." rows="10" cols="40"></textarea>
     </div>
     <div>
-        <input type="submit" value="Отправить форму">
+        <input type="submit" class="btn" value="Отправить форму">
     </div>
 </form>
-
+</div>
 
 </body>
 </html>
